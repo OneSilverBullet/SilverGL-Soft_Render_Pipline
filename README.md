@@ -1,6 +1,6 @@
 # SilverGL-Soft_Render_Pipline
 
-0. 致谢 & 为什么做这个开源项目？
+### 0. 致谢 & 为什么做这个开源项目？
 
 感谢 zxx43 大佬的指导，让我对软渲染管线有进一步的理解。
 感谢 Angelo1211 大佬的项目，让我加深了对渲染管线的理解。
@@ -9,14 +9,14 @@
 （2） 加深我对图形学的理解。
 （3） 打破渲染的黑盒，将学习到的渲染理论加以实战。
 
-1. 项目基本信息
+### 1. 项目基本信息
 * 编程语言：C++
 * 基于框架：Windows
 * 其他引用库：stb_image
 * 实验环境：Visual Studio 2017
 * 说明：这个项目只需要你具有C++知识就可以进行阅读学习。其绘制函数使用的是Windows框架，这意味着你只需要查一查几个函数弄清楚win的绘制机理，就不需要补充其他任何知识了。整个项目完全使用C++来对图形学渲染理论进行实战，这意味着如果你希望了解渲染是怎么做的，但是受制于图形API或其他图形框架的陡峭学习曲线，那么这个项目可以告诉你渲染究竟是怎么做到的。
 
-2. 项目实现的功能
+### 2. 项目实现的功能
 * 基础的数学库，包含MATRIX,VECTOR等。
 * 基础的数据结构,包括FrameBuffer，DepthBuffer，Triangle等。
 * 光栅化渲染，使用扫描线算法与重心坐标法进行的光栅化计算，项目中包含3种不同方式的实现。
@@ -37,7 +37,7 @@
 * 场景部分需要使其更加灵活，达到随意增加。
 * 考虑重构代码，构建材质模块，使渲染过程OOP化。
 
-4. 目前实现的效果
+### 4. 目前实现的效果
 
 ![基础的Cube绘制（Diffuse光照）](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Result.png)
 ![PBR绘制木箱（不同颜色光照效果）](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res0.png)
