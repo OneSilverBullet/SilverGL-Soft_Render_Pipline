@@ -1,0 +1,33 @@
+s firehydrant
+//First line just checks that you are indeed reading the right config file
+/
+//SECTION: models
+m 1
+m01 firehydrant firehydrant
+pos 0.0 -0.5 0.0 
+rot 0.0 0.0 0.0
+sca 1.0 1.0 1.0 
+/
+//SECTION: lights
+l 2
+l01 f
+pos 1.0 0.0 0.0
+col 1.0 1.0 1.0
+/
+l02 c
+pos 1.0 0.0 1.0
+col 1.0 1.0 1.0
+/
+l03 f
+pos 1.0 0.0 1.0
+col 0.0 0.0 1.0
+/
+l04 f
+pos 1.0 1.0 1.0
+col 1.0 0.0 1.0
+/
+//SECTION: cameras
+c 
+/
+
+
