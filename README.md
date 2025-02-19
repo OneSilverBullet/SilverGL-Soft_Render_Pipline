@@ -1,47 +1,57 @@
-# SilverGL-Soft_Render_Pipline
+# SilverGL-Soft_Render_Pipeline
 
-### 0. Acknowledgments & Why do you do this open source project?
+## 🌟 Introduction
 
-Thanks to the guidance of **zxx43**, I have a better understanding of the soft rendering pipeline.
+Welcome to **SilverGL-Soft_Render_Pipeline** – an open-source project focused on implementing a high-performance soft rendering pipeline in C++. This project is built from scratch to demystify the inner workings of rendering in computer graphics, while pushing the boundaries of what can be achieved with a pure C++ approach. 
 
-Thanks to **Angelo1211** for his project, which helped me deepen my understanding of the rendering pipeline.
+### 🏆 Why Open Source?
 
-Computer Graphics, as the three major romances of computer science, always have a deep attraction for programmers. Especially today, when AAA computer games are becoming more and more popular, for me who wants to enter the game industry, I am eager to break the black box of rendering in games. I no longer want to rely on OpenGL/DX to achieve some cool effects. I want to have a deeper understanding of how to implement a PBR renderer with good performance from one line of C++. This is the core purpose of this open-source project. My goals for this project are summarized as follows:
+Thanks to the valuable guidance from **zxx43**, my understanding of the soft rendering pipeline has significantly deepened. I also want to acknowledge **Angelo1211** for their project, which further influenced the development of this pipeline.
 
-(1) Put my C++ knowledge to use.
+As a computer graphics enthusiast, I’ve always been fascinated by the complexities of rendering, especially in the world of AAA game development. By embarking on this project, I aim to:
 
-(2) Deepen my understanding of graphics.
+- Apply my **C++** knowledge to a real-world rendering pipeline.
+- Gain deeper insights into **computer graphics** theory and implementation.
+- Move beyond the black box of game engines, creating a custom **PBR renderer** and implementing lighting models from scratch.
 
-(3) Break the black box of rendering and put the learned rendering theory into practice.
+---
 
+## 📋 Project Overview
 
-### 1. Basic Information
-* Programming language: C++
-* Based on the framework: Windows
-* Other reference libraries: stb_image
-* Experimental environment: Visual Studio 2017
-* Note: This project only requires you to have C++ knowledge. I develop this project based on the Windows framework. You only need to check a few functions to understand the drawing mechanism of Win, and you do not need to add any other knowledge. The entire project uses C++ to practice graphics rendering theory. This means that if you want to understand how rendering is done, but are limited by the steep learning curve of graphics APIs or other graphics frameworks, then this project can help you.
+### 📍 Key Features
 
-### 2. Features
-* Basic mathematics library, including MATRIX, VECTOR, etc.
-* Basic data structures, including FrameBuffer, DepthBuffer, Triangle, etc.
-* Raster rendering, raster calculation using scan line algorithm and barycenter coordinate method, the project includes 3 different implementations.
-* A relatively complete graphics rendering pipeline, including initialization of equipment, coordinate conversion, viewport mapping and inverse mapping, triangle Clip and Cull, and other operations.
-* A basic Shader system based on function pointers, including Vertex Shader and Fragment Shader, which can implement basic Diffuse lighting.
-* An advanced Shader system based on virtual functions that implement classic lighting models such as Blinn Phong, Texture Shader, and PBR Cook Torrance.
-* A relatively complete Texture module that supports Linear, Nearest, and Tile sampling, and supports the reading of colors, normal maps, AO maps, etc.
-* Complete model loading system, supporting the loading of obj models.
-* Display manager based on Windows framework.
-* Key control system based on Windows framework.
-* Basic GameObject system and transformation system.
-* Basic resource management system, which can manage the resource manager of Texture and Base Shader.
+Here’s a quick overview of what this project offers:
 
+| **Feature**                          | **Description**                                                                 |
+|--------------------------------------|---------------------------------------------------------------------------------|
+| **Math Library**                     | MATRIX, VECTOR, and other essential math utilities.                              |
+| **Data Structures**                  | FrameBuffer, DepthBuffer, Triangle, etc., to support rendering functionality.   |
+| **Raster Rendering**                 | Scan line algorithm, barycentric coordinates, and multiple rasterization methods.|
+| **Graphics Pipeline**                | Complete pipeline: initialization, coordinate conversion, clipping, culling, etc.|
+| **Shader System**                    | Basic & advanced shaders: Diffuse, Blinn Phong, Texture, and PBR Cook-Torrance.  |
+| **Texture Module**                   | Supports Linear, Nearest, and Tile sampling with colors, normal maps, and AO.   |
+| **Model Loading**                    | .obj model loader for 3D assets.                                                 |
+| **Resource Management**              | Efficient management of textures and shaders.                                    |
+| **Control Systems**                  | Key input system and display manager based on the Windows framework.            |
 
-### 3. Performance
+---
 
-![基础的Cube绘制（Diffuse光照）](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Result.png)
-![PBR绘制木箱（不同颜色光照效果）](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res0.png)
-![PBR绘制木箱（不同颜色光照效果）](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res1.png)
-![PBR绘制木箱（不同颜色光照效果）](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res2.png)
-![PBR绘制火枪](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res3.png)
-![PBR绘制消防栓](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res4.png)
+### ⚙️ Technical Details
+
+- **Programming Language**: C++
+- **Framework**: Windows
+- **Reference Libraries**: stb_image
+- **Development Environment**: Visual Studio 2017
+
+> **Note**: This project requires only basic C++ knowledge. It’s designed with simplicity in mind, so even beginners to graphics programming can get started with the fundamentals of rendering.
+
+---
+
+## 📸 Performance Showcase
+
+The following images demonstrate the rendering performance and visual effects achievable with **SilverGL-Soft_Render_Pipeline**.
+
+- **PBR Lighting Effects**:
+    ![PBR Wooden Box 1](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res0.png)
+    ![PBR Wooden Box 2](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res1.png)
+    ![PBR Wooden Box 3](https://github.com/OneSilverBullet/SilverGL-Soft_Render_Pipline/blob/master/Output/Res2.png)
